@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Keyboard</title>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <div class="out"></div>
+  <div class="keyboard">
+    <div class="mouse-shadow"></div>
+    <div>
+      <div class="keyboard__row">
+        <button class="key-btn-left w-58 key-esc" type="button">esc</button>
+        <button class="key-f" data-key="112" type="button">f1</button>
+        <button class="key-f" type="button">f2</button>
+        <button class="key-f" type="button">f3</button>
+        <button class="key-f" type="button">f4</button>
+        <button class="key-f" type="button">f5</button>
+        <button class="key-f" type="button">f6</button>
+        <button class="key-f" type="button">f7</button>
+        <button class="key-f" type="button">f8</button>
+        <button class="key-f" type="button">f9</button>
+        <button class="key-f" type="button">f10</button>
+        <button class="key-f" type="button">f11</button>
+        <button class="key-f" type="button">f12</button>
+        <button class="key-touch-id" type="button"></button>
+      </div>
+      <div class="keyboard__row">
+        <button class="key-symnum">~<br>`</button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">!</span>
+          <span class="key-num">1</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">@</span>
+          <span class="key-num">2</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">#</span>
+          <span class="key-num">3</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">$</span>
+          <span class="key-num">4</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">%</span>
+          <span class="key-num">5</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">^</span>
+          <span class="key-num">6</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">&</span>
+          <span class="key-num">7</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">*</span>
+          <span class="key-num">8</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">(</span>
+          <span class="key-num">9</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">)</span>
+          <span class="key-num">0</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span>_</span>
+          <span>-</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span>+</span>
+          <span>=</span>
+        </button>
+        <button class="w-58 key-btn-right" type="button">delete</button>
+      </div>
+      <div class="keyboard__row">
+        <button class="key-btn-left w-58" type="button">tab</button>
+        <button class="key-letter" type="button">Q</button>
+        <button class="key-letter" type="button">W</button>
+        <button class="key-letter" type="button">E</button>
+        <button class="key-letter" type="button">R</button>
+        <button class="key-letter" type="button">T</button>
+        <button class="key-letter" type="button">Y</button>
+        <button class="key-letter" type="button">U</button>
+        <button class="key-letter" type="button">I</button>
+        <button class="key-letter" type="button">O</button>
+        <button class="key-letter" type="button">P</button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">{</span>
+          <span class="key-num">[</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">}</span>
+          <span class="key-num">]</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">|</span>
+          <span class="key-num">\</span>
+        </button>
+      </div>
+      <div class="keyboard__row">
+        <button class="key-btn-left w-68 key-caps" type="button">caps lock</button>
+        <button class="key-letter" type="button">A</button>
+        <button class="key-letter" type="button">S</button>
+        <button class="key-letter" type="button">D</button>
+        <button class="key-letter" type="button">F</button>
+        <button class="key-letter" type="button">G</button>
+        <button class="key-letter" type="button">H</button>
+        <button class="key-letter" type="button">J</button>
+        <button class="key-letter" type="button">K</button>
+        <button class="key-letter" type="button">L</button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">:</span>
+          <span class="key-num">;</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">"</span>
+          <span class="key-num">'</span>
+        </button>
+        <button class="key-btn-right w-68">return</button>
+      </div>
+      <div class="keyboard__row">
+        <button class="key-btn-left w-89" type="button">shift</button>
+        <button class="key-letter" type="button">Z</button>
+        <button class="key-letter" type="button">X</button>
+        <button class="key-letter" type="button">C</button>
+        <button class="key-letter" type="button">V</button>
+        <button class="key-letter" type="button">B</button>
+        <button class="key-letter" type="button">N</button>
+        <button class="key-letter" type="button">M</button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym"><</span>
+          <span class="key-num">,</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">></span>
+          <span class="key-num">.</span>
+        </button>
+        <button class="key-symnum" type="button">
+          <span class="key-sym">?</span>
+          <span class="key-num">/</span>
+        </button>
+        <button class="key-btn-right w-89" type="button">shift</button>
+      </div>
+      <div class="keyboard__row">
+        <button class="key-btn-right w-58 key-control" type="button">control</button>
+        <button class="key-btn-right w-48" type="button">option</button>
+        <button class="key-btn-right w-58" type="button">command</button>
+        <button class="key-space" type="button"></button>
+        <button class="key-btn-left w-58" type="button">command</button>
+        <button class="key-btn-left w-48" type="button">option</button>
+        <button class="key-btn-left w-58" type="button">control</button>
+      </div>
+    </div>
+    <div class="keyboard__middle">
+      <div class="keyboard__row--middle-top">
+        <button class="key-f" type="button">f13</button>
+        <button class="key-f" type="button">f14</button>
+        <button class="key-f" type="button">f15</button>
+        <button class="key-f" type="button">fn</button>
+        <button class="key-f" type="button">home</button>
+        <button class="key-f" type="button">page up</button>
+        <button class="key-f" type="button">f15</button>
+        <button class="key-f" type="button">end</button>
+        <button class="key-f" type="button">page down</button>
+      </div>
+      <div class="keyboard__row--middle-bottom">
+        <div>
+          <button class="key-letter arrow-up" type="button">
+            <div class="triangle"></div>
+          </button>
+        </div>
+        <div class="keyboard__row">
+          <button class="key-letter" type="button">
+            <div class="triangle triangle-left"></div>
+          </button>
+          <button class="key-letter" type="button">
+            <div class="triangle triangle-down"></div>
+          </button>
+          <button class="key-letter" type="button">
+            <div class="triangle triangle-right"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="keyboard__row">
+        <button class="key-f" type="button">f17</button>
+        <button class="key-f" type="button">f18</button>
+        <button class="key-f" type="button">f16</button>
+        <button class="key-f" type="button">f19</button>
+      </div>
+      <div class="keyboard__row">
+        <button class="key-f" type="button">clear</button>
+        <button class="key-letter" type="button">=</button>
+        <button class="key-letter" type="button">/</button>
+        <button class="key-letter" type="button">*</button>
+      </div>
+      <div class="keyboard__row">
+        <button class="key-letter" type="button">7</button>
+        <button class="key-letter" type="button">8</button>
+        <button class="key-letter" type="button">9</button>
+        <button class="key-letter" type="button">-</button>
+      </div>
+      <div class="keyboard__row">
+        <button class="key-letter" type="button">4</button>
+        <button class="key-letter" type="button">5</button>
+        <button class="key-letter" type="button">6</button>
+        <button class="key-letter" type="button">=</button>
+      </div>
+      <div class="keyboard__row">
+        <div class="keyboard__row-inner">
+          <button class="key-letter" type="button">1</button>
+          <button class="key-letter" type="button">2</button>
+          <button class="key-letter" type="button">3</button>
+          <button class="key-letter key-zero" type="button">0</button>
+          <button class="key-letter" type="button">.</button>
+        </div>
+        <button class="key-enter key=" type="button">enter</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

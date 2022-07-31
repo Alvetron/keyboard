@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Gothic A1', sans-serif;
+  background-color: #999999;
+}
+
+button {
+  position: relative;
+  display: flex;
+  width: 37px;
+  height: 37px;
+  margin: 2px;
+  padding: 5px;
+  font-family: inherit;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgb(26,27,31);
+  background: linear-gradient(180deg, rgba(26,27,31,1) 0%, rgba(43,44,47,1) 100%);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  border-top: 2px solid #999999;
+  border-left: 2px solid #999999;
+  border-bottom: 2px solid #444444;
+  border-right: 2px solid #444444;
+}
+
+button:active {
+  border-top: 2px solid #444444;
+  border-left: 2px solid #444444;
+  border-bottom: 2px solid #999999;
+  border-right: 2px solid #999999;
+}
+
+.mouse-shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.mouse-shadow::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);  
+  transition: width 0.1s, height 0.1s;
+  opacity: 0;
+  content: "";
+}
+
+.mouse-shadow.clicked::before {
+  width: 80%;
+  height: 80%;  
+  opacity: 1;
+}
+
+.mouse-shadow.active {
+  display: block;
+}
+
+.w-48 {
+  width: 48px;
+}
+
+.w-58 {
+  width: 58px;
+}
+
+.w-68 {
+  width: 68px;
+}
+
+.w-89 {
+  width: 89px;
+}
+
+.keyboard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 920px;
+  padding: 5px;
+  background-color: #c1c2c4;
+  border-radius: 15px;
+}
+
+.keyboard__row {
+  display: flex;
+}
+
+.key-btn-left,
+.key-btn-right {
+  align-items: flex-end;
+  font-size: 0.6rem;
+}
+
+.key-btn-left {
+  justify-content: flex-start;
+}
+
+.key-btn-right {
+  justify-content: flex-end;
+}
+
+.key-esc {
+  border-top-left-radius: 15px;
+}
+
+.key-f {
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 0.7rem;
+}
+
+.key-touch-id {
+  position: relative;
+}
+
+.key-touch-id::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  border-top: 2px solid rgba(26,27,31,1);
+  border-bottom: 2px solid rgba(26,27,31,1);
+  border-left: 2px solid rgba(43,44,47,1);
+  border-right: 2px solid rgba(43,44,47,1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
+.key-symnum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-sym,
+.key-num {
+  pointer-events: none;
+}
+
+.key-sym {
+  font-size: 0.7rem;
+}
+
+.key-num {
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.key-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.key-caps {
+  position: relative;
+}
+
+.key-caps::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  content: "";
+}
+
+.key-control {
+  border-bottom-left-radius: 15px;
+}
+
+.key-space {
+  flex-grow: 1;
+}
+
+.keyboard__middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.keyboard__row--middle-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.arrow-up {
+  margin: 0 auto;
+}
+
+.triangle {
+  background-color:rgba(255, 255, 255, 0.7);
+	clip-path: polygon(50% 0, 100% 100%, 0 100%);
+	width: 4px;
+	height: 4px;
+}
+
+
+.triangle-left {
+  transform: rotate(-90deg);
+}
+
+.triangle-down {
+  transform: rotate(180deg);
+}
+
+.triangle-right {
+  transform: rotate(90deg);
+}
+
+.keyboard__row-inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 124px;
+}
+
+.key-zero {
+  width: 78px;
+}
+
+.key-enter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 37px;
+  height: 78px;
+  font-size: 0.6rem;
+}
